@@ -1,0 +1,5 @@
+{
+  "good": ["apple", "banana", "orange"],
+  "meh": ["peach", "berry", "pear"],
+  "bad": ["grape", "melon", "tomato"]
+}
