@@ -2,7 +2,7 @@
   "name": "pick-your-poison",
   "private": true,
   "version": "1.0.0",
-  "homepage": "https://yourusername.github.io/pick-your-poison",
+  "homepage": "https://marialouro.github.io/pick-your-poison/",
   "type": "module",
   "scripts": {
     "dev": "vite",
