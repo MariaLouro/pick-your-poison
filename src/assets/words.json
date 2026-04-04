@@ -1,5 +1,220 @@
 {
-  "good": ["apple", "banana", "orange"],
-  "meh": ["peach", "berry", "pear"],
-  "bad": ["grape", "melon", "tomato"]
+  "frutos_secos": {
+    "label": "Frutos Secos",
+    "items": [
+      { "name": "noz", "status": "good" },
+      { "name": "macadâmia", "status": "good" },
+      { "name": "pinhão", "status": "good" },
+      { "name": "pecã", "status": "good" },
+      { "name": "sementes (sésamo, linhaça, chia, ...)", "status": "good" },
+      { "name": "avelã", "status": "warning", "obs": "10 unidades" },
+      { "name": "amêndoa", "status": "warning", "obs": "10 unidades" },
+      { "name": "castanha pará", "status": "warning", "obs": "2/dia" },
+      { "name": "castanha", "status": "warning", "obs": "6/dia" },
+      { "name": "caju", "status": "bad" },
+      { "name": "pistachio", "status": "bad" }
+    ]
+  },
+  "laticinios": {
+    "label": "Laticínios",
+    "items": [
+      { "name": "iogurte sem lactose", "status": "good" },
+      { "name": "leite sem lactose", "status": "good" },
+      { "name": "queijo fresco sem lactose", "status": "good" },
+      { "name": "requeijão sem lactose", "status": "good" },
+      { "name": "natas sem lactose", "status": "good" },
+      { "name": "iogurte à base de côco", "status": "good" },
+      { "name": "bebidas vegetais", "status": "good" },
+      { "name": "queijo cottage", "status": "good" },
+      { "name": "queijo flamengo", "status": "warning", "obs": "2 fatias de 20g" },
+      { "name": "queijo feta", "status": "warning", "obs": "2 fatias de 20g" },
+      { "name": "queijo mozarella", "status": "warning", "obs": "2 fatias de 20g" },
+      { "name": "queijo cheddar", "status": "warning", "obs": "2 fatias de 20g" },
+      { "name": "queijo parmesão", "status": "warning", "obs": "2 fatias de 20g" },
+      { "name": "queijo brie", "status": "warning", "obs": "2 fatias de 20g" },
+      { "name": "queijo camembert", "status": "warning", "obs": "2 fatias de 20g" },
+      { "name": "manteiga", "status": "warning", "obs": "5g" },
+      { "name": "leite com lactose", "status": "bad" },
+      { "name": "leite de soja", "status": "bad" },
+      { "name": "iogurte de soja", "status": "bad" },
+      { "name": "queijos amarelos", "status": "bad" },
+      { "name": "kefir", "status": "bad" }
+    ]
+  },
+  "cereais_e_acompanhamentos": {
+    "label": "Cereais e Acompanhamentos",
+    "items": [
+      { "name": "arroz", "status": "good" },
+      { "name": "mandioca/tapioca", "status": "good" },
+      { "name": "quinoa", "status": "good" },
+      { "name": "aveia", "status": "good" },
+      { "name": "trigo sarraceno", "status": "good" },
+      { "name": "milho", "status": "good" },
+      { "name": "amêndoa", "status": "good" },
+      { "name": "côco", "status": "good" },
+      { "name": "pão de fermentação lenta exceto centeio", "status": "good" },
+      { "name": "massa mãe de fermentação lenta", "status": "good" },
+      { "name": "massa sem gluten", "status": "good" },
+      { "name": "batata", "status": "good" },
+      { "name": "batata doce", "status": "good" },
+      { "name": "trigo", "status": "bad" },
+      { "name": "centeio", "status": "bad" },
+      { "name": "cevada", "status": "bad" },
+      { "name": "chicória", "status": "bad" },
+      { "name": "inulina", "status": "bad" },
+      { "name": "farinha alfarroba", "status": "bad" },
+      { "name": "farinha tremoço", "status": "bad" },
+      { "name": "alfarroba", "status": "bad" },
+      { "name": "tremoço", "status": "bad" },
+      { "name": "massa", "status": "bad" }
+    ]
+  },
+  "vegetais": {
+    "label": "Vegetais",
+    "items": [
+      { "name": "rúcula", "status": "good" },
+      { "name": "beringela", "status": "good" },
+      { "name": "feijão verde", "status": "good" },
+      { "name": "pimentos", "status": "good" },
+      { "name": "couve roxa", "status": "good" },
+      { "name": "alface", "status": "good" },
+      { "name": "nabo", "status": "good" },
+      { "name": "espinafres", "status": "good" },
+      { "name": "cenoura", "status": "good" },
+      { "name": "courgette", "status": "good", "alias": ["courgete", "corgete", "curgete"] },
+      { "name": "agrião", "status": "good" },
+      { "name": "nabiças", "status": "good" },
+      { "name": "chuchu", "status": "good" },
+      { "name": "endívias", "status": "good" },
+      { "name": "kale", "status": "good" },
+      { "name": "kael", "status": "good" },
+      { "name": "acelgas", "status": "good" },
+      { "name": "alcegas", "status": "good" },
+      { "name": "couves", "status": "good" },
+      { "name": "pepino", "status": "warning", "obs": "65g" },
+      { "name": "edamame", "status": "warning", "obs": "90g" },
+      { "name": "azeitonas", "status": "warning", "obs": "60g" },
+      { "name": "tomate", "status": "warning", "obs": "65g" },
+      { "name": "tomate cherry", "status": "warning", "obs": "6 unidades" },
+      { "name": "abóbora", "status": "warning", "obs": "45g" },
+      { "name": "beterraba", "status": "warning", "obs": "1/2 unidade" },
+      { "name": "alcachofras", "status": "bad" },
+      { "name": "couve-flor", "status": "bad" },
+      { "name": "cogumelos", "status": "bad" },
+      { "name": "ervilhas", "status": "bad" },
+      { "name": "bimis", "status": "bad" },
+      { "name": "talos brócolos", "status": "bad" },
+      { "name": "alho francês", "status": "bad" },
+      { "name": "espargos", "status": "bad" },
+      { "name": "aipo", "status": "bad" },
+      { "name": "alho", "status": "bad" },
+      { "name": "cebola", "status": "bad" }
+    ]
+  },
+  "frutas": {
+    "label": "Frutas",
+    "items": [
+      { "name": "mirtilos", "status": "good" },
+      { "name": "kiwi", "status": "good" },
+      { "name": "limão", "status": "good" },
+      { "name": "papaia", "status": "good" },
+      { "name": "lima", "status": "good" },
+      { "name": "laranja", "status": "good" },
+      { "name": "tangerina", "status": "good" },
+      { "name": "maracujá", "status": "good" },
+      { "name": "abacaxi", "status": "good" },
+      { "name": "banana firme", "status": "good" },
+      { "name": "cranberries", "status": "good" },
+      { "name": "coco", "status": "warning", "obs": "48g" },
+      { "name": "tâmaras", "status": "warning", "obs": "30g" },
+      { "name": "cerejas", "status": "warning", "obs": "3 unidades" },
+      { "name": "lichias", "status": "warning", "obs": "5 unidades" },
+      { "name": "romã", "status": "warning", "obs": "1/2 unidade" },
+      { "name": "banana seca", "status": "warning", "obs": "10 unidades" },
+      { "name": "abacate", "status": "warning", "obs": "60g" },
+      { "name": "banana madura", "status": "warning", "obs": "40g" },
+      { "name": "framboesa", "status": "warning", "obs": "58g" },
+      { "name": "uvas", "status": "warning", "obs": "6 unidades"},
+      { "name": "morangos", "status": "warning", "obs": "65g" },
+      { "name": "diospiro", "status": "warning", "obs": "1/2 unidade" },
+      { "name": "toranja", "status": "warning", "obs": "80g" },
+      { "name": "melão", "status": "warning", "obs": "1 fatia" },
+      { "name": "meloa", "status": "warning", "obs": "1 fatia" },
+      { "name": "maçã", "status": "bad" },
+      { "name": "damasco", "status": "bad" },
+      { "name": "amoras", "status": "bad"},
+      { "name": "ameixa", "status": "bad" },
+      { "name": "frutas em conserva", "status": "bad" },
+      { "name": "figos", "status": "bad" },
+      { "name": "goiaba", "status": "bad" },
+      { "name": "manga", "status": "bad" },
+      { "name": "nectarina", "status": "bad" },
+      { "name": "pêssegos", "status": "bad"},
+      { "name": "peras", "status": "bad"},
+      { "name": "melancia", "status": "bad" }
+    ]
+  },
+  "proteinas": {
+    "label": "Proteínas",
+    "items": [
+      { "name": "carnes brancas", "status": "good" },
+      { "name": "carnes vermelhas", "status": "good", "obs": "até 2x por semana" },
+      { "name": "ovo", "status": "good" },
+      { "name": "lentilhas", "status": "good" }
+    ]
+  },
+  "leguminosas": {
+    "label": "Leguminosas",
+    "items": [
+      { "name": "feijão manteiga", "status": "warning", "obs": "2 c. sopa" },
+      { "name": "feijão preto", "status": "warning", "obs": "2 c. sopa" },
+      { "name": "feijão frade", "status": "warning", "obs": "2 c. sopa" },
+      { "name": "grão", "status": "warning", "obs": "2 c. sopa" },
+      { "name": "lentilhas", "status": "warning", "obs": "2 c. sopa" },
+      { "name": "favas", "status": "bad" },
+      { "name": "soja", "status": "bad" },
+      { "name": "leite de soja", "status": "bad" },
+      { "name": "iogurte de soja", "status": "bad" },
+      { "name": "ervilhas", "status": "bad" },
+      { "name": "tremoços", "status": "bad" },
+      { "name": "miso", "status": "bad" }
+    ]
+  },
+  "bebidas_e_outros": {
+    "label": "Bebidas e Diversos",
+    "items": [
+      { "name": "cerveja", "status": "warning", "obs": "até 330 mL" },
+      { "name": "vinho", "status": "warning", "obs": "1 copo" },
+      { "name": "chá camomila", "status": "bad" },
+      { "name": "chá oolong", "status": "bad" },
+      { "name": "chá de funcho", "status": "bad" },
+      { "name": "kombucha", "status": "bad" },
+      { "name": "chocolate 70%", "status": "good", "obs": "2 pedaços" }
+    ]
+  },
+  "condimentos": {
+    "label": "Condimentos",
+    "items": [
+      { "name": "especiarias (canela, pimenta, sal, curcuma)", "status": "good" },
+      { "name": "ervas aromáticas (salsa, manjericão, coentros, erva doce)", "status": "good" },
+      { "name": "azeite", "status": "good" },
+      { "name": "vinagre", "status": "good" },
+      { "name": "mostarda dijon", "status": "good" }
+    ]
+  },
+  "adocantes": {
+    "label": "Adoçantes",
+    "items": [
+      { "name": "xarope de ácer", "status": "good" },
+      { "name": "açúcar moderado", "status": "good" },
+      { "name": "mel", "status": "warning", "obs": "5g" },
+      { "name": "xarope de agave", "status": "bad" },
+      { "name": "xarope de milho", "status": "bad" },
+      { "name": "melaço", "status": "bad" },
+      { "name": "sorbitol", "status": "bad" },
+      { "name": "manitol", "status": "bad" },
+      { "name": "xilitol", "status": "bad" },
+      { "name": "polióis", "status": "bad" }
+    ]
+  }
 }
