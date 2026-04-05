@@ -72,11 +72,12 @@ function App() {
 
     } else {
       const primeiroStatus = matches[0].status;
-      const todosIguais = matches.every(item => item.status === primeiroStatus);
+      const todosIguais = primeiroStatus != "warning" && matches.every(item => item.status === primeiroStatus);
 
       if (todosIguais) {
         setStatus(primeiroStatus);
-        setObservation(matches.length === 1 ? (matches[0].obs || "") : "Evitar nos vários formatos.");
+        setObservation(primeiroStatus === "bad" ? "Evitar nos vários formatos." : 
+                      primeiroStatus === "good" ? "Podes comer nos vários formatos." : "");
       
       } else {
         setStatus("multiple");
